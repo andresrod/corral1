@@ -7,7 +7,7 @@
 //
 
 #import "DetailViewController.h"
-
+#import "Burger.h"
 @interface DetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
 - (void)configureView;
@@ -17,26 +17,36 @@
 
 #pragma mark - Managing the detail item
 
-- (void)setDetailItem:(id)newDetailItem
+- (void)setOrderItem:(Burger *)newOrderItem
 {
-    if (_detailItem != newDetailItem) {
-        _detailItem = newDetailItem;
+    if (_orderItem != newOrderItem) {
+        _orderItem = newOrderItem;
         
         // Update the view.
         [self configureView];
     }
-
-    if (self.masterPopoverController != nil) {
-        [self.masterPopoverController dismissPopoverAnimated:YES];
-    }        
 }
 
 - (void)configureView
 {
     // Update the user interface for the detail item.
+    Burger *theItem = self.orderItem;
+    
 
-    if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
+    if (theItem) {
+
+        if (self.orderItem.lettuce) {
+            self.lettuceLabel.text = @"yes";
+        } else {
+            self.lettuceLabel.text = @"no";
+        }
+            
+        if (self.orderItem.tomatoe) {
+            self.tomatoeLabel.text = @"yes";
+        } else {
+            self.tomatoeLabel.text = @"no";
+        }
+        
     }
 }
 

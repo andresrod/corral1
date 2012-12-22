@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+@class Burger;
+@interface DetailViewController : UITableViewController
 
-@interface DetailViewController : UIViewController <UISplitViewControllerDelegate>
 
-@property (strong, nonatomic) id detailItem;
 
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (strong, nonatomic) Burger *orderItem;
+@property (weak, nonatomic) IBOutlet UILabel *lettuceLabel;
+@property (weak, nonatomic) IBOutlet UILabel *tomatoeLabel;
+
+
 @end

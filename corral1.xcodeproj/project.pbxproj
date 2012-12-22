@@ -20,6 +20,16 @@
 		78B4D554168577C0005F823E /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78B4D552168577C0005F823E /* MainStoryboard_iPad.storyboard */; };
 		78B4D557168577C0005F823E /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B4D556168577C0005F823E /* MasterViewController.m */; };
 		78B4D55A168577C0005F823E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B4D559168577C0005F823E /* DetailViewController.m */; };
+		78B4D56916857A0A005F823E /* Burger.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B4D56816857A0A005F823E /* Burger.m */; };
+		78B4D56C16857C0E005F823E /* OrderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B4D56B16857C0E005F823E /* OrderController.m */; };
+		78B4D57816858FD4005F823E /* logo_corral_descarga.png in Resources */ = {isa = PBXBuildFile; fileRef = 78B4D57116858FD4005F823E /* logo_corral_descarga.png */; };
+		78B4D57916858FD4005F823E /* bgElCorralContainer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78B4D57216858FD4005F823E /* bgElCorralContainer.jpg */; };
+		78B4D57A16858FD4005F823E /* bgMenuItemsPic.png in Resources */ = {isa = PBXBuildFile; fileRef = 78B4D57316858FD4005F823E /* bgMenuItemsPic.png */; };
+		78B4D57B16858FD4005F823E /* burgerCorral.png in Resources */ = {isa = PBXBuildFile; fileRef = 78B4D57416858FD4005F823E /* burgerCorral.png */; };
+		78B4D57C16858FD4005F823E /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 78B4D57516858FD4005F823E /* background.png */; };
+		78B4D57D16858FD4005F823E /* logo_corral_descarga.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78B4D57616858FD4005F823E /* logo_corral_descarga.jpg */; };
+		78B4D57E16858FD4005F823E /* sideordersPapas1.png in Resources */ = {isa = PBXBuildFile; fileRef = 78B4D57716858FD4005F823E /* sideordersPapas1.png */; };
+		78B4D58116859C6C005F823E /* AddItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B4D58016859C6C005F823E /* AddItemController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +52,19 @@
 		78B4D556168577C0005F823E /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		78B4D558168577C0005F823E /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		78B4D559168577C0005F823E /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		78B4D56716857A0A005F823E /* Burger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Burger.h; sourceTree = "<group>"; };
+		78B4D56816857A0A005F823E /* Burger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Burger.m; sourceTree = "<group>"; };
+		78B4D56A16857C0E005F823E /* OrderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderController.h; sourceTree = "<group>"; };
+		78B4D56B16857C0E005F823E /* OrderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderController.m; sourceTree = "<group>"; };
+		78B4D57116858FD4005F823E /* logo_corral_descarga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_corral_descarga.png; sourceTree = "<group>"; };
+		78B4D57216858FD4005F823E /* bgElCorralContainer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bgElCorralContainer.jpg; sourceTree = "<group>"; };
+		78B4D57316858FD4005F823E /* bgMenuItemsPic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgMenuItemsPic.png; sourceTree = "<group>"; };
+		78B4D57416858FD4005F823E /* burgerCorral.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = burgerCorral.png; sourceTree = "<group>"; };
+		78B4D57516858FD4005F823E /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		78B4D57616858FD4005F823E /* logo_corral_descarga.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo_corral_descarga.jpg; sourceTree = "<group>"; };
+		78B4D57716858FD4005F823E /* sideordersPapas1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sideordersPapas1.png; sourceTree = "<group>"; };
+		78B4D57F16859C6C005F823E /* AddItemController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddItemController.h; sourceTree = "<group>"; };
+		78B4D58016859C6C005F823E /* AddItemController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddItemController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,10 +115,16 @@
 				78B4D547168577C0005F823E /* AppDelegate.m */,
 				78B4D54F168577C0005F823E /* MainStoryboard_iPhone.storyboard */,
 				78B4D552168577C0005F823E /* MainStoryboard_iPad.storyboard */,
+				78B4D57F16859C6C005F823E /* AddItemController.h */,
+				78B4D58016859C6C005F823E /* AddItemController.m */,
 				78B4D555168577C0005F823E /* MasterViewController.h */,
 				78B4D556168577C0005F823E /* MasterViewController.m */,
 				78B4D558168577C0005F823E /* DetailViewController.h */,
 				78B4D559168577C0005F823E /* DetailViewController.m */,
+				78B4D56716857A0A005F823E /* Burger.h */,
+				78B4D56816857A0A005F823E /* Burger.m */,
+				78B4D56A16857C0E005F823E /* OrderController.h */,
+				78B4D56B16857C0E005F823E /* OrderController.m */,
 				78B4D53E168577C0005F823E /* Supporting Files */,
 			);
 			path = corral1;
@@ -104,6 +133,13 @@
 		78B4D53E168577C0005F823E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				78B4D57116858FD4005F823E /* logo_corral_descarga.png */,
+				78B4D57216858FD4005F823E /* bgElCorralContainer.jpg */,
+				78B4D57316858FD4005F823E /* bgMenuItemsPic.png */,
+				78B4D57416858FD4005F823E /* burgerCorral.png */,
+				78B4D57516858FD4005F823E /* background.png */,
+				78B4D57616858FD4005F823E /* logo_corral_descarga.jpg */,
+				78B4D57716858FD4005F823E /* sideordersPapas1.png */,
 				78B4D53F168577C0005F823E /* corral1-Info.plist */,
 				78B4D540168577C0005F823E /* InfoPlist.strings */,
 				78B4D543168577C0005F823E /* main.m */,
@@ -172,6 +208,13 @@
 				78B4D54E168577C0005F823E /* Default-568h@2x.png in Resources */,
 				78B4D551168577C0005F823E /* MainStoryboard_iPhone.storyboard in Resources */,
 				78B4D554168577C0005F823E /* MainStoryboard_iPad.storyboard in Resources */,
+				78B4D57816858FD4005F823E /* logo_corral_descarga.png in Resources */,
+				78B4D57916858FD4005F823E /* bgElCorralContainer.jpg in Resources */,
+				78B4D57A16858FD4005F823E /* bgMenuItemsPic.png in Resources */,
+				78B4D57B16858FD4005F823E /* burgerCorral.png in Resources */,
+				78B4D57C16858FD4005F823E /* background.png in Resources */,
+				78B4D57D16858FD4005F823E /* logo_corral_descarga.jpg in Resources */,
+				78B4D57E16858FD4005F823E /* sideordersPapas1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +229,9 @@
 				78B4D548168577C0005F823E /* AppDelegate.m in Sources */,
 				78B4D557168577C0005F823E /* MasterViewController.m in Sources */,
 				78B4D55A168577C0005F823E /* DetailViewController.m in Sources */,
+				78B4D56916857A0A005F823E /* Burger.m in Sources */,
+				78B4D56C16857C0E005F823E /* OrderController.m in Sources */,
+				78B4D58116859C6C005F823E /* AddItemController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
