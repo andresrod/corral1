@@ -16,7 +16,7 @@
     if (self) {
         _lettuce = lettuce;
         _tomatoe = tomatoe;
-        
+        _itemType = @"Burger";
         return self;
     }
     return nil;

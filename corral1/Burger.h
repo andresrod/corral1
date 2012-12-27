@@ -12,6 +12,7 @@
 
 @property (readwrite) BOOL lettuce;
 @property (readwrite) BOOL tomatoe;
+@property (readonly) NSString *itemType;
 
 -(id) initWithLettuce: (BOOL)lettuce
               tomatoe: (BOOL)tomatoe;

@@ -8,12 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "AddItemController.h"
+#import "AddItemControllerFries.h"
 
 @class DetailViewController;
 @class OrderController;
 @interface MasterViewController : UITableViewController
 @property (strong, nonatomic) OrderController *dataController;
-@property (strong, nonatomic) DetailViewController *detailViewController;
+//@property (strong, nonatomic) DetailViewController *detailViewController;
 
 - (IBAction)done:(UIStoryboardSegue *)segue;
 - (IBAction)cancel:(UIStoryboardSegue *)segue;

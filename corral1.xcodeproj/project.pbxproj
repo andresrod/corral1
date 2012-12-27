@@ -30,6 +30,9 @@
 		78B4D57D16858FD4005F823E /* logo_corral_descarga.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78B4D57616858FD4005F823E /* logo_corral_descarga.jpg */; };
 		78B4D57E16858FD4005F823E /* sideordersPapas1.png in Resources */ = {isa = PBXBuildFile; fileRef = 78B4D57716858FD4005F823E /* sideordersPapas1.png */; };
 		78B4D58116859C6C005F823E /* AddItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B4D58016859C6C005F823E /* AddItemController.m */; };
+		78B4D588168BEC50005F823E /* Fries.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B4D587168BEC50005F823E /* Fries.m */; };
+		78B4D58B168BF1B7005F823E /* DetailViewControllerFries.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B4D58A168BF1B7005F823E /* DetailViewControllerFries.m */; };
+		78B4D58E168BFA2C005F823E /* AddItemControllerFries.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B4D58D168BFA2C005F823E /* AddItemControllerFries.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +68,12 @@
 		78B4D57716858FD4005F823E /* sideordersPapas1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sideordersPapas1.png; sourceTree = "<group>"; };
 		78B4D57F16859C6C005F823E /* AddItemController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddItemController.h; sourceTree = "<group>"; };
 		78B4D58016859C6C005F823E /* AddItemController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddItemController.m; sourceTree = "<group>"; };
+		78B4D586168BEC50005F823E /* Fries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fries.h; sourceTree = "<group>"; };
+		78B4D587168BEC50005F823E /* Fries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fries.m; sourceTree = "<group>"; };
+		78B4D589168BF1B7005F823E /* DetailViewControllerFries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewControllerFries.h; sourceTree = "<group>"; };
+		78B4D58A168BF1B7005F823E /* DetailViewControllerFries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewControllerFries.m; sourceTree = "<group>"; };
+		78B4D58C168BFA2C005F823E /* AddItemControllerFries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddItemControllerFries.h; sourceTree = "<group>"; };
+		78B4D58D168BFA2C005F823E /* AddItemControllerFries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddItemControllerFries.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,12 +126,18 @@
 				78B4D552168577C0005F823E /* MainStoryboard_iPad.storyboard */,
 				78B4D57F16859C6C005F823E /* AddItemController.h */,
 				78B4D58016859C6C005F823E /* AddItemController.m */,
+				78B4D58C168BFA2C005F823E /* AddItemControllerFries.h */,
+				78B4D58D168BFA2C005F823E /* AddItemControllerFries.m */,
 				78B4D555168577C0005F823E /* MasterViewController.h */,
 				78B4D556168577C0005F823E /* MasterViewController.m */,
 				78B4D558168577C0005F823E /* DetailViewController.h */,
 				78B4D559168577C0005F823E /* DetailViewController.m */,
+				78B4D589168BF1B7005F823E /* DetailViewControllerFries.h */,
+				78B4D58A168BF1B7005F823E /* DetailViewControllerFries.m */,
 				78B4D56716857A0A005F823E /* Burger.h */,
 				78B4D56816857A0A005F823E /* Burger.m */,
+				78B4D586168BEC50005F823E /* Fries.h */,
+				78B4D587168BEC50005F823E /* Fries.m */,
 				78B4D56A16857C0E005F823E /* OrderController.h */,
 				78B4D56B16857C0E005F823E /* OrderController.m */,
 				78B4D53E168577C0005F823E /* Supporting Files */,
@@ -232,6 +247,9 @@
 				78B4D56916857A0A005F823E /* Burger.m in Sources */,
 				78B4D56C16857C0E005F823E /* OrderController.m in Sources */,
 				78B4D58116859C6C005F823E /* AddItemController.m in Sources */,
+				78B4D588168BEC50005F823E /* Fries.m in Sources */,
+				78B4D58B168BF1B7005F823E /* DetailViewControllerFries.m in Sources */,
+				78B4D58E168BFA2C005F823E /* AddItemControllerFries.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

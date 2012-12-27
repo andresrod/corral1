@@ -9,9 +9,11 @@
 #import "MasterViewController.h"
 
 #import "DetailViewController.h"
+#import "DetailViewControllerFries.h"
 
 #import "OrderController.h"
 #import "Burger.h"
+#import "Fries.h"
 /*
 @interface MasterViewController () {
     NSMutableArray *_objects;
@@ -72,13 +74,23 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"BurgerCell";
-    
+    static NSString *CellIdentifier;
+    static NSString *CellLabel;
+    id orderItem = [self.dataController objectInListAtIndex:indexPath.row];
+    if ([orderItem isKindOfClass:[Burger class]]) {
+        CellIdentifier = @"BurgerCell";
+        CellLabel = @"burger";
+    }
+ //   static NSString *CellIdentifier = @"BurgerCell";
+    if ([orderItem isKindOfClass:[Fries class]]) {
+        CellIdentifier = @"FriesCell";
+        CellLabel = @"fries";
+    }
 
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
  //   Burger *burgerAtIndex = [self.dataController objectInListAtIndex:indexPath.row];
-    [[cell textLabel] setText:@"burguer"];
+    [[cell textLabel] setText:CellLabel];
  //   [[cell detailTextLabel] setText:@"ketchup"];
     return cell;
 }
@@ -125,9 +137,18 @@
 */
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"ShowItemDetails"]) {
-        DetailViewController *detailViewController = [segue destinationViewController];
+        id orderItem = [self.dataController objectInListAtIndex:[self.tableView indexPathForSelectedRow].row];
+        if ([orderItem isKindOfClass:[Burger class]]) {
+            DetailViewController *detailViewController = [segue destinationViewController];
         
-        detailViewController.orderItem = [self.dataController objectInListAtIndex:[self.tableView indexPathForSelectedRow].row];
+            detailViewController.orderItem = [self.dataController objectInListAtIndex:[self.tableView indexPathForSelectedRow].row];
+        }
+        
+        if ([orderItem isKindOfClass:[Fries class]]) {
+            DetailViewControllerFries *detailViewController = [segue destinationViewController];
+            
+            detailViewController.orderItem = [self.dataController objectInListAtIndex:[self.tableView indexPathForSelectedRow].row];
+        }
     }
 }
 
@@ -151,5 +172,21 @@
         [self dismissViewControllerAnimated:YES completion:NULL];
     }
 }
+
+
+- (IBAction)doneFries:(UIStoryboardSegue *)segue
+{
+    if ([[segue identifier] isEqualToString:@"ReturnInput"]) {
+        
+        AddItemControllerFries *addController = [segue sourceViewController];
+        if (addController.friesItem) {
+            [self.dataController addOrderItem:addController.friesItem];
+            [[self tableView] reloadData];
+        }
+        [self dismissViewControllerAnimated:YES completion:NULL];
+    }
+}
+
+
 
 @end

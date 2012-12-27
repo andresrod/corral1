@@ -8,12 +8,13 @@
 
 #import <Foundation/Foundation.h>
 @class Burger;
+@class Fries;
 @interface OrderController : NSObject
 
 @property (nonatomic, copy) NSMutableArray *masterOrderList;
 
 - (NSUInteger)countOfList;
-- (Burger *)objectInListAtIndex:(NSUInteger)theIndex;
+- (id)objectInListAtIndex:(NSUInteger)theIndex;
 - (void)addOrderItemWithBurger:(Burger *)burgerItem;
-
+- (void)addOrderItem:(id)orderItem;
 @end

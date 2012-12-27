@@ -8,6 +8,7 @@
 
 #import "OrderController.h"
 #import "Burger.h"
+#import "Fries.h"
 
 @interface OrderController ()
 - (void)initializeDefaultDataList;
@@ -19,9 +20,12 @@
     NSMutableArray *orderList = [[NSMutableArray alloc] init];
     self.masterOrderList = orderList;
     Burger *burgerItem;
+    Fries  *friesItem;
     
     burgerItem = [[Burger alloc] initWithLettuce:TRUE tomatoe:TRUE];
+    friesItem = [[Fries alloc] initWithSalt:TRUE pepper:TRUE];
     [self addOrderItemWithBurger: burgerItem];
+    [self addOrderItem: friesItem];
 }
 
 - (void)setMasterOrderList:(NSMutableArray *)newList {
@@ -49,5 +53,11 @@
 - (void)addOrderItemWithBurger:(Burger *)burgerItem{
     [self.masterOrderList addObject:burgerItem];
 }
+
+- (void)addOrderItem:(id)orderItem{
+    [self.masterOrderList addObject:orderItem];
+}
+
+
 
 @end
