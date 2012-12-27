@@ -78,7 +78,7 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "13"
          endingLineNumber = "13"
-         landmarkName = "-initWithSalt:pepper:"
+         landmarkName = "-initWithSalt:pepper:size:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint

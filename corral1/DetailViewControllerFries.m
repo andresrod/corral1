@@ -48,6 +48,8 @@
             self.pepperLabel.text = @"no";
         }
         
+        self.sizeLabel.text = self.orderItem.size;
+
     }
 }
 

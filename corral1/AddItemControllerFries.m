@@ -98,8 +98,11 @@
          }
          */
         Fries *friesItem0;
+        NSArray *sizeArray = [NSArray arrayWithObjects:@"S",@"M",@"L", nil];
+        NSString *size = [sizeArray objectAtIndex:self.sizePicker.selectedSegmentIndex];
         friesItem0 = [[Fries alloc] initWithSalt:self.saltSwitch.on
-                                              pepper:self.pepperSwitch.on];
+                                              pepper:self.pepperSwitch.on
+                                                size:size];
         self.friesItem = friesItem0;
         
     }

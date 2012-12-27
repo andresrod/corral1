@@ -13,9 +13,11 @@
 @property (readwrite) BOOL salt;
 @property (readwrite) BOOL pepper;
 @property (readonly) NSString *itemType;
+@property (readonly) NSString *size;
 
 -(id) initWithSalt: (BOOL)salt
-              pepper: (BOOL)pepper;
+              pepper: (BOOL)pepper
+              size: (NSString*)size;
 
 
 

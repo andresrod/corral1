@@ -14,6 +14,7 @@
 
 @property (weak, nonatomic) IBOutlet UISwitch *saltSwitch;
 @property (weak, nonatomic) IBOutlet UISwitch *pepperSwitch;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *sizePicker;
 
 @property (strong, nonatomic) Fries *friesItem;
 

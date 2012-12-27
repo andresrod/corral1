@@ -13,5 +13,6 @@
 @property (strong, nonatomic) Fries *orderItem;
 @property (weak, nonatomic) IBOutlet UILabel *saltLabel;
 @property (weak, nonatomic) IBOutlet UILabel *pepperLabel;
+@property (weak, nonatomic) IBOutlet UILabel *sizeLabel;
 
 @end

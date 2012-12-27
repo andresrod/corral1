@@ -11,12 +11,14 @@
 @implementation Fries
 
 -(id)initWithSalt:(BOOL)salt
-            pepper :(BOOL)pepper {
+            pepper :(BOOL)pepper
+            size : (NSString*) size{
     self = [super init];
     if (self) {
         _salt = salt;
         _pepper = pepper;
         _itemType = @"Fries";
+        _size = size;
         return self;
     }
     return nil;

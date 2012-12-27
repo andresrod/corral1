@@ -23,7 +23,7 @@
     Fries  *friesItem;
     
     burgerItem = [[Burger alloc] initWithLettuce:TRUE tomatoe:TRUE];
-    friesItem = [[Fries alloc] initWithSalt:TRUE pepper:TRUE];
+    friesItem = [[Fries alloc] initWithSalt:TRUE pepper:TRUE size:@"L"];
     [self addOrderItemWithBurger: burgerItem];
     [self addOrderItem: friesItem];
 }
