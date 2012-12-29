@@ -55,6 +55,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self configureView];
+    UIImageView *backView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"background.png"]];
+    
+    [self.tableView setBackgroundView:backView];
 }
 
 - (void)didReceiveMemoryWarning

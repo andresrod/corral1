@@ -1,18 +1,18 @@
 //
-//  AddItemController.m
+//  TableViewControllerCorral.m
 //  corral1
 //
-//  Created by Andres Rodriguez on 12-12-21.
+//  Created by Andres Rodriguez on 12-12-28.
 //  Copyright (c) 2012 yummy. All rights reserved.
 //
 
-#import "AddItemController.h"
-#import "Burger.h"
-@interface AddItemController ()
+#import "TableViewControllerCorral.h"
+
+@interface TableViewControllerCorral ()
 
 @end
 
-@implementation AddItemController
+@implementation TableViewControllerCorral
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -32,6 +32,7 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
     UIImageView *backView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"background.png"]];
     
     [self.tableView setBackgroundView:backView];
@@ -44,11 +45,30 @@
 }
 
 #pragma mark - Table view data source
+/*
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+#warning Potentially incomplete method implementation.
+    // Return the number of sections.
+    return 0;
+}
 
-
-
-
-
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+#warning Incomplete method implementation.
+    // Return the number of rows in the section.
+    return 0;
+}
+*/
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+    // Configure the cell...
+    
+    return cell;
+}
 
 /*
 // Override to support conditional editing of the table view.
@@ -91,21 +111,15 @@
 
 #pragma mark - Table view delegate
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([[segue identifier] isEqualToString:@"ReturnInput"]) {
-/*        if ([self.birdNameInput.text length] || [self.locationInput.text length]) {
-            BirdSighting *sighting;
-            NSDate *today = [NSDate date];
-            sighting = [[BirdSighting alloc] initWithName:self.birdNameInput.text location:self.locationInput.text date:today];
-            self.birdSighting = sighting;
-        }
-*/
-        Burger *burgerItem0;
-        burgerItem0 = [[Burger alloc] initWithLettuce:self.lettuceSwitch.on
-                                             tomatoe:self.tomatoeSwitch.on];
-        self.burgerItem = burgerItem0;
-        
-    }
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Navigation logic may go here. Create and push another view controller.
+    /*
+     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
+     // ...
+     // Pass the selected object to the new view controller.
+     [self.navigationController pushViewController:detailViewController animated:YES];
+     */
 }
 
 @end

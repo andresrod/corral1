@@ -30,6 +30,8 @@
     }
     [super awakeFromNib];
     self.dataController = [[OrderController alloc] init];
+    
+
 }
 
 - (void)viewDidLoad
@@ -42,6 +44,9 @@
     self.navigationItem.rightBarButtonItem = addButton;
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
 */
+    UIImageView *backView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"background.png"]];
+
+    [self.tableView setBackgroundView:backView];
 }
 
 - (void)didReceiveMemoryWarning
